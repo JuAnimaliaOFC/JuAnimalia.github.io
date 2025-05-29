@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuAnimalia - Ciencia Animal</title>
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+    header {
+  background-color: #00796b;
+  background-image: url("lobo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  text-align: center;
+}
+
+
+    header img {
+      max-width: 350px; /* Logo más grande */
+      height: auto;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    header .title-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0.2em;
+    }
+
+    header .title-group h1 {
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    header .title-group p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #004d40;
+      padding: 0.75em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    section {
+      padding: 1.5em 1em;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00796b;
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    a {
+      color: #00796b;
+    }
+
+    .social-icons {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .animal-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 1em 0;
+      display: block;
+    }
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .video-embed {
+      width: 100%;
+      max-width: 400px;
+      height: 700px;
+      border: none;
+    }
+
+    .map-button {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1em;
+    }
+
+    .map-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 0.8em 1em;
+      }
+
+      header img {
+        max-width: 200px;
+        margin-right: 0;
+      }
+
+      header .title-group {
+        align-items: center;
+        text-align: center;
+      }
+
+      header .title-group h1 {
+        font-size: 1.8em;
+      }
+
+      header .title-group p {
+        font-size: 1.05em;
+      }
+
+      .video-embed {
+        max-width: 100%;
+        height: 500px;
+      }
+
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo JuAnimalia">
+    <div class="title-group">
+      <h1>JuAnimalia</h1>
+      <p>Divulgación científica sobre animales desde la Biología</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contenido">Contenido</a>
+    <a href="#animales">Animales destacados</a>
+    <a href="#colaboraciones">Colaboraciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>¡Bienvenido a JuAnimalia! Aquí exploramos el fascinante mundo de los animales con el poder de la Biología.</p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Mi nombre es Juan José Gavilán De La Torre. Soy estudiante de la Licenciatura en Biología y divulgador científico apasionado por explicar cómo funciona el mundo animal de forma entretenida y comprensible para todo el mundo.</p>
+  </section>
+
+  <section id="contenido">
+    <h2>Contenido</h2>
+    <p>Aquí podrás ver algunos de los videos, publicaciones y proyectos que he realizado en redes sociales.</p>
+    <div class="video-container">
+      <iframe class="video-embed" src="https://www.tiktok.com/embed/v2/7366049192470416656"></iframe>
+      <iframe class="video-embed" src="https://www.tiktok.com/embed/v2/7473662470247189778"></iframe>
+      <iframe class="video-embed" src="https://www.tiktok.com/embed/v2/7332667612415003910"></iframe>
+      <iframe class="video-embed" src="https://www.tiktok.com/embed/v2/7315598179884469510"></iframe>
+    </div>
+  </section>
+
+  <section id="animales">
+    <h2>Animales destacados</h2>
+    <p><strong>Ajolote mexicano (Ambystoma mexicanum)</strong></p>
+    <img class="animal-img" src="ajolote.png" alt="Ajolote mexicano">
+    <p>Es un anfibio endémico de los canales de Xochimilco, en Ciudad de México, famoso por su capacidad única de regenerar extremidades, órganos e incluso partes del cerebro...</p>
+
+    <p><strong>Jaguar (Panthera onca)</strong></p>
+    <img class="animal-img" src="jaguar.jpeg" alt="Jaguar">
+    <p>Es el felino más grande de América y habita principalmente en selvas del sur de México, como la Selva Lacandona en Chiapas...</p>
+
+    <p><strong>Vaquita marina (Phocoena sinus)</strong></p>
+    <img class="animal-img" src="vaquitam.jpg" alt="Vaquita marina">
+    <p>Es el cetáceo más pequeño del mundo y uno de los más amenazados: solo vive en el Alto Golfo de California...</p>
+
+    <h3>Mapa interactivo de especies mexicanas</h3>
+    <a class="map-button" href="file:///C:/Users/Lenovo/Desktop/Sitio%20web%20JuAnimalia/Mapa%20interactivo.html" target="_blank">Mapa de especies mexicanas</a>
+  </section>
+
+  <section id="colaboraciones">
+    <h2>Colaboraciones</h2>
+    <p>¿Eres parte de una escuela, proyecto, medio de comunicación o marca interesada en colaborar? Aquí encontrarás información sobre cómo contactarme.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a:</p>
+    <ul>
+      <li><a href="mailto:juanimalia20g@gmail.com">juanimalia20g@gmail.com</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/JuAnimalia20?locale=es_LA" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+      <a href="https://www.youtube.com/channel/UClYvLTyw1kQaoQ6ZfswZb-g" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+      <a href="https://www.instagram.com/juanimalia_/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@juanimalia_" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JuAnimalia. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
